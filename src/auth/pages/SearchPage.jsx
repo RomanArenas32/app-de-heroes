@@ -17,14 +17,14 @@ export const SearchPage = () => {
   };
 
   return (
-    <form>
+    <form className="formulario">
       <div>
         <input type="text" value={name} onChange={(e) => setName(e.target.value)}/>
         <label htmlFor="">Nombre</label>
       </div>
       <hr />
       <div>
-        <button onClick={redirigir}>Buscar</button>
+        <button className="big-button" onClick={redirigir}>Buscar</button>
       </div>
     </form>
   );

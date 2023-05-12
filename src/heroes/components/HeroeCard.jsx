@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import './heroCard.css'
 
 export const HeroeCard = ({
   id,
@@ -11,7 +12,7 @@ export const HeroeCard = ({
   const heroImg = `../../../assets/heroes/${id}.jpg`;
   return (
     <>
-      <ul>
+      <div className="card">
       <img src={heroImg} alt= "superhero" />
         <li>{superhero}</li>
         <li>{publisher}</li>
@@ -19,7 +20,7 @@ export const HeroeCard = ({
         <li>{first_appearance}</li>
         <li>{characters}</li>
         <Link to={`/hero/${id}`}><span>Mas..</span></Link>
-      </ul>
+      </div>
     </>
   );
 };

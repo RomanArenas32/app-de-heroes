@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthContext";
+import './loginSearch.css'
 
 export const LoginPage = () => {
 
@@ -24,12 +25,12 @@ export const LoginPage = () => {
   }
 
   return (
-    <div >
-      <h1>Login</h1>
-      <hr />
+    <div className="loginB" >
+      <h1 className="title">Login</h1>
+
 
       <button 
-        
+        className="big-button"
         onClick={ onLogin }
       >
         Login

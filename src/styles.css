@@ -1,29 +1,61 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.nav{
+
+.nav {
     height: 5rem;
     background-color: black;
     color: beige;
 }
-.link{
+
+.link {
     color: blanchedalmond;
     text-decoration: none;
     font-weight: 700;
     font-size: 1.5rem;
 }
-.nav_1{
+
+.nav_1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 1.4rem;
 }
-.nav_2{
+
+.nav_2 {
     display: flex;
     gap: 1rem;
 }
-img{
+
+img {
     width: 300px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: steelblue;
+}
+
+.title {
+    margin: 2rem;
+    text-align: center;
+    animation-name: titleAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes titleAnimation {
+    from {
+        color: black;
+        background-color: white;
+    }
+
+    to {
+        color: white;
+        background-color: black;
+    }
 }
